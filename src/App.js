@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { Login } from './Login'
+import { Schemas } from './Schemas'
+import { SchemaDetail } from './SchemaDetail'
+import { NewSchema } from './NewSchema'
+import { DataSet } from './DataSet'
+import './app.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/schemas/new">
+            <NewSchema />
+          </Route>
+          <Route path="/schemas/:id/dataset">
+            <DataSet />
+          </Route>
+          <Route path="/schemas/:id">
+            <SchemaDetail />
+          </Route>
+          <Route path="/">
+            <Schemas />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

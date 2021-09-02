@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    background: #F7F7F9;
+    display: flex;
+    align-items: center;
+    padding: 16px 64px;
+}
+
+.header__logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header__link {
+    margin-left: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile {
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.logout {
+    cursor: pointer;
+    margin-left: 16px;
+}

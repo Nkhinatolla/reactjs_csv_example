@@ -1,0 +1,54 @@
+.scheme-title {
+    color: #0275D8;
+    text-decoration: none;
+}
+
+.scheme-title:hover {
+    color: #0275D8;
+    text-decoration: underline;
+}
+
+.edit {
+    color: #0275D8;
+    text-decoration: none;
+}
+
+.edit:hover {
+    color: #0275D8;
+    text-decoration: underline;
+}
+
+.delete {
+    color: #D9534F;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.delete:hover {
+    color: #D9534F;
+    text-decoration: underline;
+}
+
+.detail {
+    padding: 0 64px 128px 64px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 334px 264px 200px 200px;
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+    margin-top: 24px;
+}
+
+.divider {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.delete-column {
+    margin-top: 40px;
+    margin-left: 24px;
+    cursor: pointer;
+}
